@@ -1,0 +1,11 @@
+/snap/clion/263/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/snap/clion/263/bin/ninja/linux/x64/ninja -G Ninja -S /home/asus/Masaüstü/my_project -B /home/asus/Masaüstü/my_project/cmake-build-debug
+-- The C compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_C_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CC" or the CMake cache entry CMAKE_C_COMPILER to the full path to
+  the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
