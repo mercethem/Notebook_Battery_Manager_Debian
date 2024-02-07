@@ -10,7 +10,6 @@ int main() {
 //    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main /usr/bin"); //dosyayı kopyalıyor orjinal
 //    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main.desktop /home/asus/.config/autostart"); //dosyayı kopyalıyor orjinal
 
-
     ////Bat için dosya kontrolü kabulü
 
     char *filename_password = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/password.txt";
