@@ -65,7 +65,6 @@ int main() {
     printf("%s",command_battery_level_echo);
     system(command_battery_level_echo);
 
-
 //    // dosyayı kullanabilirliğini kaldırır
 //
 //    char r_command_password_echo[FILENAME_MAX] = "echo ";
