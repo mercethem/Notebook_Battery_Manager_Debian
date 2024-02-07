@@ -4,11 +4,11 @@
 #include <string.h>
 
 int main() {
-
-//    system("echo 2744543@heM | sudo -S chmod 777 /sys/class/power_supply/BAT1/charge_control_end_threshold"); //okunurdan yazılıra geçirir
-//    system("echo 60 | tee /sys/class/power_supply/BAT1/charge_control_end_threshold"); //60 yapar
-//    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main /usr/bin"); //dosyayı kopyalıyor orjinal
-//    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main.desktop /home/asus/.config/autostart"); //dosyayı kopyalıyor orjinal
+//
+    system("echo 2744543@heM | sudo -S chmod 777 /sys/class/power_supply/BAT1/charge_control_end_threshold"); //okunurdan yazılıra geçirir
+    system("echo 60 | tee /sys/class/power_supply/BAT1/charge_control_end_threshold"); //60 yapar
+    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main /usr/bin"); //dosyayı kopyalıyor orjinal
+    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main.desktop /home/asus/.config/autostart"); //dosyayı kopyalıyor orjinal
 
 
     ////Bat için dosya kontrolü kabulü
@@ -79,10 +79,6 @@ int main() {
     system(r_command_password_echo);
 
 
-
-
-
-
     // dosyayı kullanabilir kılar
 
     char *filename_usable = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/password.txt";
@@ -109,6 +105,10 @@ int main() {
     strncat(command_usable_echo, command_usable_path,FILENAME_MAX);
     printf("%s",command_usable_echo);
     system(command_usable_echo);
+
+
+
+
 
 
     ////dosya kopyalama işlemleri
@@ -138,17 +138,6 @@ int main() {
     system(command_file_copy_echo);
 
 
-    //dosyanın kullanılabilirliğini kaldırır
-    char r_command_usable_echo[FILENAME_MAX] = "echo ";
-    char r_command_usable_rank[FILENAME_MAX] = "";
-    char r_command_usable_path[FILENAME_MAX] = " | sudo -S chmod 755 /usr/bin" ;
-
-    strcpy(r_command_usable_rank, buffer_usable);
-
-    strncat(r_command_usable_echo, r_command_usable_rank,buffer_usable_length - 1);
-    strncat(r_command_usable_echo, r_command_usable_path,FILENAME_MAX);
-    printf("%s",r_command_usable_echo);
-    system(r_command_usable_echo);
 
 
     char *file_copy_config_path = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/path.txt"; //anadosyanın bulunduğu yerin adresin bulunduğu txt
@@ -177,6 +166,17 @@ int main() {
 
 
 
+    //dosyanın kullanılabilirliğini kaldırır
+    char r_command_usable_echo[FILENAME_MAX] = "echo ";
+    char r_command_usable_rank[FILENAME_MAX] = "";
+    char r_command_usable_path[FILENAME_MAX] = " | sudo -S chmod 755 /usr/bin" ;
+
+    strcpy(r_command_usable_rank, buffer_usable);
+
+    strncat(r_command_usable_echo, r_command_usable_rank,buffer_usable_length - 1);
+    strncat(r_command_usable_echo, r_command_usable_path,FILENAME_MAX);
+    printf("%s",r_command_usable_echo);
+    system(r_command_usable_echo);
 
 
 //TODO dosya yollarını ayarlayarak file'den okuyacak şekilde ayarlayıp son rütuşları yap ve tekrar değiştilemez kıl ve free işlemlerini yap
