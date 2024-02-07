@@ -1,1 +1,1 @@
-/home/asus
+/home/asus/battery_saver_asus_ubuntu
