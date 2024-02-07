@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 
+//Directories START
 #define DIRECTORY  "/home/asus/battery_saver_asus_ubuntu/path.txt"
 #define PASSWORD_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/password.txt"
 #define BATTERY_LEVEL_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/battery_end_level.txt"
+//Directories Finish
 
 int main() {
 
