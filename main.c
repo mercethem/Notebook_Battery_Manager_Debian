@@ -5,11 +5,13 @@
 
 int main() {
 
-//    system("echo 2744543@heM | sudo -S chmod 755 /sys/class/power_supply/BAT1/charge_control_end_threshold"); //okunurdan yazılıra geçirir
+//    system("echo 2744543@heM | sudo -S chmod 777 /sys/class/power_supply/BAT1/charge_control_end_threshold"); //okunurdan yazılıra geçirir
 //    system("echo 60 | tee /sys/class/power_supply/BAT1/charge_control_end_threshold"); //60 yapar
 //    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main /usr/bin"); //dosyayı kopyalıyor orjinal
 //    system("cp /media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/main.desktop /home/asus/.config/autostart"); //dosyayı kopyalıyor orjinal
 
+
+    ////Bat için dosya kontrolü kabulü
 
     char *filename_password = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/password.txt";
     FILE *file_path_password = fopen(filename_password, "r");
@@ -36,7 +38,7 @@ int main() {
     system(command_password_echo);
 
 
-
+    ////batarya verisini ayarlama
 
     char *filename_battery_level = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/battery_end_level.txt";
     FILE *file_path_battery_level = fopen(filename_battery_level, "r");
