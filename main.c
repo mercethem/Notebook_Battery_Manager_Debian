@@ -36,7 +36,6 @@ int main() {
     strncat(command_password_echo, command_password_path, FILENAME_MAX);
     system(command_password_echo);
 
-
     ////batarya verisini ayarlama
 
     char *filename_battery_level = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/battery_end_level.txt";
