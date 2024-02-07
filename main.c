@@ -17,7 +17,6 @@ int main() {
     if (file_path_password == NULL) {
         printf("Error: could not open file %s", filename_password);
     }
-
     char buffer_password[FILENAME_MAX];
 
     while (fgets(buffer_password, FILENAME_MAX, file_path_password));
