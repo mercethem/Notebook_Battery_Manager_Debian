@@ -76,7 +76,6 @@ int main() {
 //    system(r_command_password_echo);
 
     // dosyayı kullanabilir kılar
-
     char *filename_usable = "/media/asus/Software/C_Projects/MyProject/battery_saver_asus_ubuntu/password.txt";
     FILE *file_path_usable = fopen(filename_usable, "r");
     if (file_path_usable == NULL) {
