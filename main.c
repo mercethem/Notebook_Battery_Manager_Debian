@@ -3,9 +3,9 @@
 #include <string.h>
 
 //Directories START
-#define DIRECTORY  "./battery_saver_asus_ubuntu/path.txt"
-#define PASSWORD_DIRECTORY "./battery_saver_asus_ubuntu/password.txt"
-#define BATTERY_LEVEL_DIRECTORY "./battery_saver_asus_ubuntu/battery_end_level.txt"
+#define DIRECTORY  "./Notebook_Battery_Manager_Debian-master/path.txt"
+#define PASSWORD_DIRECTORY "./Notebook_Battery_Manager_Debian-master/password.txt"
+#define BATTERY_LEVEL_DIRECTORY "./Notebook_Battery_Manager_Debian-master/battery_end_level.txt"
 //Directories Finish
 
 int main() {
