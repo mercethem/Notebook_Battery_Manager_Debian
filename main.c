@@ -3,12 +3,17 @@
 #include <string.h>
 
 //Directories START
-#define DIRECTORY  "./Notebook_Battery_Manager_Debian-master/path.txt"
-#define PASSWORD_DIRECTORY "./Notebook_Battery_Manager_Debian-master/password.txt"
-#define BATTERY_LEVEL_DIRECTORY "./Notebook_Battery_Manager_Debian-master/battery_end_level.txt"
+#define DIRECTORY  "/home/asus/battery_saver_asus_ubuntu/path.txt"
+#define PASSWORD_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/password.txt"
+#define BATTERY_LEVEL_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/battery_end_level.txt"
 //Directories Finish
 
 int main() {
+//    system("echo 2744543@heM | sudo -S chmod 777 /sys/class/power_supply/BAT1/charge_control_end_threshold"); //okunurdan yazılıra geçirir
+//    system("echo 60 | tee /sys/class/power_supply/BAT1/charge_control_end_threshold"); //60 yapar
+//    system("cp /home/asus/battery_saver_asus_ubuntu/main /usr/bin"); //dosyayı kopyalıyor orjinal
+//    system("cp /home/asus/battery_saver_asus_ubuntu/main.desktop /home/asus/.config/autostart"); //dosyayı kopyalıyor orjinal
+
 
     //Change to permission (Writable-Readable-Changeable) power_ folder for BAT
     char *filename_password = PASSWORD_DIRECTORY;
@@ -150,7 +155,7 @@ int main() {
     //Command string START
     char command_file_copy_config_echo[FILENAME_MAX] = "cp ";
     char command_file_copy_config_rank[FILENAME_MAX] = "";
-    char command_file_copy_config_path[FILENAME_MAX] = "/main.desktop ./.config/autostart"; //kopyalanacak main ve kopyalanacak yer
+    char command_file_copy_config_path[FILENAME_MAX] = "/main.desktop /home/asus/.config/autostart"; //kopyalanacak main ve kopyalanacak yer
     //Command string FINISH
 
 
