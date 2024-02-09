@@ -5,13 +5,15 @@ Present global issue for notebooks is battery charge level. If you want to delim
 </a>
 <br />
 </a>
-If you want to run this project on your computer, you have to change by below defines:
+If you want to run this project on your computer from different path, you have to change by below defines:
 <br />
 </a>
 
-1) #define DIRECTORY "/home/asus/battery_saver_asus_ubuntu/path.txt"
-2) #define PASSWORD_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/password.txt"
-3) #define BATTERY_LEVEL_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/battery_end_level.txt"
+1) #define DIRECTORY "./battery_saver_asus_ubuntu/path.txt"
+2) #define PASSWORD_DIRECTORY "./battery_saver_asus_ubuntu/password.txt"
+3) #define BATTERY_LEVEL_DIRECTORY "./battery_saver_asus_ubuntu/battery_end_level.txt"
+
+> :warning: **This is a Warning**: If you want to use do anything that you should download to that file inside Home and double click main and restart Notebook!
 
 ABOVE CONTENTS:
 - DIRECTORY : Path of program directory
