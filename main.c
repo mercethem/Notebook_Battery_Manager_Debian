@@ -3,9 +3,9 @@
 #include <string.h>
 
 //Directories START
-#define DIRECTORY  "/home/asus/battery_saver_asus_ubuntu/path.txt"
-#define PASSWORD_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/password.txt"
-#define BATTERY_LEVEL_DIRECTORY "/home/asus/battery_saver_asus_ubuntu/battery_end_level.txt"
+#define DIRECTORY  "./battery_saver_asus_ubuntu/path.txt"
+#define PASSWORD_DIRECTORY "./battery_saver_asus_ubuntu/password.txt"
+#define BATTERY_LEVEL_DIRECTORY "./battery_saver_asus_ubuntu/battery_end_level.txt"
 //Directories Finish
 
 int main() {
@@ -150,7 +150,7 @@ int main() {
     //Command string START
     char command_file_copy_config_echo[FILENAME_MAX] = "cp ";
     char command_file_copy_config_rank[FILENAME_MAX] = "";
-    char command_file_copy_config_path[FILENAME_MAX] = "/main.desktop /home/asus/.config/autostart"; //kopyalanacak main ve kopyalanacak yer
+    char command_file_copy_config_path[FILENAME_MAX] = "/main.desktop ./.config/autostart"; //kopyalanacak main ve kopyalanacak yer
     //Command string FINISH
 
 
