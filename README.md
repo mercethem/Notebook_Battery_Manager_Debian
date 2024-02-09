@@ -19,7 +19,7 @@ If you want to run this project on your computer from different path, you have t
 ABOVE CONTENTS:
 - DIRECTORY : Path of program directory
 - PASSWORD_DIRECTORY : Your root password
-- BATTERY_LEVEL_DIRECTORY : Level of battery what you want to stop 
+- BATTERY_LEVEL_DIRECTORY : Level of battery what you want to stop (Do not enter a value less than zero and greater than hundred)
 
 ------------------------------------------------------------------------------------------------------------------------------------------------
 #Tested With Below Devices
